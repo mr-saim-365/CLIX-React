@@ -82,7 +82,7 @@ const Navbar = () => {
         </motion.div>
       </motion.div>
 
-      <div ref={ref} className="my-8">
+      <div ref={ref} className="mb-4 mt-8">
         <motion.div
           initial="hidden"
           animate={inView ? "visible" : "hidden"}
@@ -97,7 +97,7 @@ const Navbar = () => {
               className="flex items-center space-x-1 text-2xl font-bold"
             >
         
-              <img className="w-[160px] h-[130px]" src="/images/logo3.png"></img>
+              <img className="w-[80px] h-[60px]" src="/images/logo3.png"></img>
       
         
             </Link>
