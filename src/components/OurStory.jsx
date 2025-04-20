@@ -23,7 +23,7 @@ const OurStory = () => {
     return (
         <div className="w-full bg-[linear-gradient(to_bottom_left,_#0f0f1a_80%,_#2b1957_105%,_#5a3d91_80%)]
 relative py-20">
-            <div className="flex flex-col md:flex-row gap-5 lg:gap-10 items-center justify-center px-3">
+            <div className="flex flex-col md:flex-row gap-5 lg:gap-10 items-center justify-center px-3 lg:w-[90%] 2xl:w-[70%] mx-auto">
 
 
                 <motion.div
@@ -57,7 +57,7 @@ relative py-20">
                             src="/images/OurStory.jpg"
                             alt="Feature Image"
 
-                            className="w-full h-[35vh] sm:h-[70vh] 2xl:h-[60vh]  md:clip-path-custom"
+                            className="w-full h-[35vh] sm:h-[50vh] md:clip-path-custom"
                         />
                     </div>
 

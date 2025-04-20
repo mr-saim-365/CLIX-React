@@ -26,7 +26,7 @@ const services = [
     desc: "We create unique and memorable logos that represent the essence of your brand. Our design team works closely with you to understand your business and develop a logo that reflects your values.",
   },
   {
-    img: "/images/serviceImage3.webp",
+    img: "/images/serviceImage3.jpeg",
     title: "Software Consultancy",
     desc: "Our software consultants provide expert guidance to help you navigate the complex world of technology solutions. We help you optimize your software infrastructure to drive efficiency and innovation.",
   },
@@ -36,7 +36,7 @@ const services = [
     desc: "Your brand’s visual identity matters. We create Logo Designs, Brand Kits, Social Media Creatives, and Marketing Materials that reflect your brand’s message and style.",
   },
   {
-    img: "/images/serviceImage5.jpg",
+    img: "/images/serviceImage5.jpeg",
     title: "Digital Marketing",
     desc: "We offer comprehensive digital marketing solutions to help you reach and interact with your audience. We combine strategy, creativity, and tech to grow your brand online.",
   },
@@ -126,7 +126,7 @@ const Services = () => {
   return (
     <section id="services" className="bg-[linear-gradient(to_bottom_right,_#0f0f1a_80%,_#2b1957_105%,_#5a3d91_80%)] py-20">
       <div className="w-full px-6 md:px-0 md:w-[90%] 2xl:w-[70%] mx-auto text-[#ffffff]">
-         <div className="flex flex-col gap-3 items-center text-center mb-10 md:mb-20">
+         <div className="flex flex-col gap-3 items-center text-center mb-10 md:mb-20 2xl:w-[70%] mx-auto">
           <h1 className="text-[36px] md:text-[40px]">Our Services</h1>
           <p className="text-sm md:text-[16px]">At Cli-X, we provide a full spectrum of digital solutions designed to accelerate your growth and streamline your operations. From design to deployment, we build experiences that are fast, functional, and future-ready.</p>
          </div>
