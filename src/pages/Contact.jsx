@@ -62,7 +62,7 @@ const Contact = () => {
 
   return (
     <>
-      <section className=" px-4 md:px-0 bg-[linear-gradient(to_top_right,_#0f0f1a_80%,_#2b1957_105%,_#5a3d91_80%)]">
+      <section className=" px-4 md:px-0 bg-[linear-gradient(to_top_right,_#0b121e_80%,_#2f3a4d_100%)]">
         <Navbar />
 
         <div className="pt-12 pb-32">

@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import { useState, useEffect, useCallback } from "react";
 import { IoMdMenu } from "react-icons/io";
 import { IoMdClose } from "react-icons/io";
@@ -54,8 +54,10 @@ const Navbar = () => {
         initial="hidden"
         animate={inView ? "visible" : "hidden"}
         variants={containerVariants}
-        className="mx-auto w-full md:px-0 md:w-[90%] 2xl:w-[80%] flex justify-between items-center px-4"
+        className="mx-auto w-full md:px-0 md:w-[80%] 2xl:w-[90%] flex justify-end items-center px-4"
       >
+
+
         <motion.div
           variants={itemVariants}
           className="flex items-center space-x-4"
@@ -65,20 +67,6 @@ const Navbar = () => {
           </a>
           <span className="text-gray-400">|</span>
           <span className="flex items-center">+92 21-2427626</span>
-        </motion.div>
-        <motion.div
-          variants={itemVariants}
-          className="hidden sm:flex items-center space-x-4"
-        >
-          <a href="#" className="hover:text-gray-700">
-            <FaTwitter size={18} />
-          </a>
-          <a href="#" className="hover:text-blue-700">
-            <FaFacebookF size={18} />
-          </a>
-          <a href="#" className="hover:text-pink-500">
-            <FaInstagram size={18} />
-          </a>
         </motion.div>
       </motion.div>
 
@@ -92,7 +80,7 @@ const Navbar = () => {
             variants={itemVariants}
             className="mx-auto flex text-[#ffffff] justify-between items-center px-4 md:w-[90%] 2xl:w-[80%] md:px-1"
           >
-            <Link
+            {/* <Link
               to="#"
               className="flex items-center space-x-1 text-2xl font-bold"
             >
@@ -100,59 +88,70 @@ const Navbar = () => {
               <img className="w-[80px] h-[60px]" src="/images/logo3.png"></img>
       
         
-            </Link>
+            </Link> */}
 
             <nav
               variants={itemVariants}
               className="hidden md:flex items-center space-x-6"
             >
-              <Link to="/" className="hover:text-gray-700">
+              <Link to="/" className="hover:scale-110 transition-all">
                 Home
               </Link>
 
-                <a
-                  onClick={(e) => {
-                    e.preventDefault();
-                    const section = document.getElementById("services");
-                    if (section) {
-                      section.scrollIntoView({ behavior: "smooth" });
-                      window.history.replaceState(
-                        null,
-                        "",
-                        window.location.pathname
-                      ); 
-                    }
-                  }}
-                  className="cursor-pointer hover:text-primary transition"
-                >
-                  Our Services
-                </a>
-       
+              <a
+                onClick={(e) => {
+                  e.preventDefault();
+                  const section = document.getElementById("services");
+                  if (section) {
+                    section.scrollIntoView({ behavior: "smooth" });
+                    window.history.replaceState(
+                      null,
+                      "",
+                      window.location.pathname
+                    );
+                  }
+                }}
+                className="cursor-pointer hover:scale-110 transition-all"
+              >
+                Our Services
+              </a>
 
-     
-                <a
-                  onClick={(e) => {
-                    e.preventDefault();
-                    const section = document.getElementById("AboutUs");
-                    if (section) {
-                      section.scrollIntoView({ behavior: "smooth" });
-                      window.history.replaceState(
-                        null,
-                        "",
-                        window.location.pathname
-                      ); 
-                    }
-                  }}
-                  className="cursor-pointer hover:text-primary transition"
-                >
-                  About Us
-                </a>
-        
+              <a
+                onClick={(e) => {
+                  e.preventDefault();
+                  const section = document.getElementById("AboutUs");
+                  if (section) {
+                    section.scrollIntoView({ behavior: "smooth" });
+                    window.history.replaceState(
+                      null,
+                      "",
+                      window.location.pathname
+                    );
+                  }
+                }}
+                className="cursor-pointer hover:scale-110 transition-all"
+              >
+                About Us
+              </a>
+            </nav>
 
-              <Link to="/Contact" className="hover:text-gray-700">
+            <motion.div
+              variants={itemVariants}
+              className="hidden sm:flex items-center space-x-4"
+            >
+              <Link to="/Contact" className="hover:scale-110 transition-all">
                 Contact Us
               </Link>
-            </nav>
+              <a href="#" className="hover:text-gray-700 hover:scale-110 transition-all">
+                <FaTwitter size={18} />
+              </a>
+              <a href="#" className="hover:text-blue-700 hover:scale-110 transition-all">
+                <FaFacebookF size={18} />
+              </a>
+              <a href="#" className="hover:text-pink-500 hover:scale-110 transition-all">
+                <FaInstagram size={18} />
+              </a>
+            </motion.div>
 
             <button
               className="md:hidden"
@@ -184,44 +183,41 @@ const Navbar = () => {
               <Link to="/">Home</Link>
             </li>
 
-           
-              <a
-                onClick={(e) => {
-                  e.preventDefault();
-                  const section = document.getElementById("services");
-                  if (section) {
-                    section.scrollIntoView({ behavior: "smooth" });
-                    window.history.replaceState(
-                      null,
-                      "",
-                      window.location.pathname
-                    ); 
-                  }
-                }}
-                className="cursor-pointer hover:text-primary transition"
-              >
-                Our Services
-              </a>
-         
+            <a
+              onClick={(e) => {
+                e.preventDefault();
+                const section = document.getElementById("services");
+                if (section) {
+                  section.scrollIntoView({ behavior: "smooth" });
+                  window.history.replaceState(
+                    null,
+                    "",
+                    window.location.pathname
+                  );
+                }
+              }}
+              className="cursor-pointer hover:text-primary transition"
+            >
+              Our Services
+            </a>
 
-              <a
-                onClick={(e) => {
-                  e.preventDefault();
-                  const section = document.getElementById("AboutUs");
-                  if (section) {
-                    section.scrollIntoView({ behavior: "smooth" });
-                    window.history.replaceState(
-                      null,
-                      "",
-                      window.location.pathname
-                    ); 
-                  }
-                }}
-                className="cursor-pointer hover:text-primary transition"
-              >
-                About US
-              </a>
-     
+            <a
+              onClick={(e) => {
+                e.preventDefault();
+                const section = document.getElementById("AboutUs");
+                if (section) {
+                  section.scrollIntoView({ behavior: "smooth" });
+                  window.history.replaceState(
+                    null,
+                    "",
+                    window.location.pathname
+                  );
+                }
+              }}
+              className="cursor-pointer hover:text-primary transition"
+            >
+              About US
+            </a>
 
             <li>
               <Link to="/Contact">Contact Us</Link>

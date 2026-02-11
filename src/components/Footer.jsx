@@ -44,7 +44,7 @@ const Footer = () => {
   };
 
   return (
-    <footer id="footer" className="bg-black text-[#FFFFFF] text-sm relative">
+    <footer id="footer" className="bg-[#fafafa] text-[#222222] text-sm relative">
       <div ref={ref} className="w-full flex flex-col items-center">
         <motion.div
           className="py-[40px] md:w-[90%] px-8 md:px-0 flex items-center justify-center"
@@ -65,25 +65,25 @@ const Footer = () => {
                   CLI-X
                 </span>
               </Link>
-              <p className="text-sm text-white/60">
+              <p className="text-sm ">
                 Cross Layer Information Exchange
               </p>
               <div className="flex mt-4 space-x-3">
                 <Link
                   to="#"
-                  className="flex items-center justify-center w-10 h-10 rounded-full border hover:text-white/100 hover:border-white/60 transition"
+                  className="flex items-center justify-center w-10 h-10 rounded-full border hover:text-black/100 hover:border-black/80 transition"
                 >
                   <FaXTwitter size={20} />
                 </Link>
                 <Link
                   to="#"
-                  className="flex items-center justify-center w-10 h-10 rounded-full border hover:text-blue-700 hover:border-white/60 transition"
+                  className="flex items-center justify-center w-10 h-10 rounded-full border hover:text-blue-700 hover:border-black/80 transition"
                 >
                   <MdOutlineFacebook size={20} />
                 </Link>
                 <Link
                   to="#"
-                  className="flex items-center justify-center w-10 h-10 rounded-full border hover:text-pink-500 hover:border-white/60 transition"
+                  className="flex items-center justify-center w-10 h-10 rounded-full border hover:text-pink-500 hover:border-black/80 transition"
                 >
                   <IoLogoInstagram size={20} />
                 </Link>
@@ -95,7 +95,7 @@ const Footer = () => {
               variants={itemVariants}
             >
               <h4 className="text-base font-bold pb-3">Useful Links</h4>
-              <ul className="space-y-2 text-white/60">
+              <ul className="space-y-2 ">
                 <li>
                   <Link to="/">Home</Link>
                 </li>
@@ -130,7 +130,7 @@ const Footer = () => {
               variants={itemVariants}
             >
               <h4 className="text-base font-bold pb-3">Our Services</h4>
-              <ul className="space-y-2 text-white/60">
+              <ul className="space-y-2 ">
                 <li>
                   <Link to="#">Web Development</Link>
                 </li>
@@ -153,7 +153,7 @@ const Footer = () => {
             </motion.div>
 
             <motion.div
-              className="flex-1 min-w-[250px] text-white/60"
+              className="flex-1 min-w-[250px] "
               variants={itemVariants}
             >
               <h4 className="text-base font-bold pb-3 text-[#ffffff]">Contact Us</h4>
@@ -168,7 +168,7 @@ const Footer = () => {
         </motion.div>
 
         <motion.div
-          className="text-center mt-8 border-t py-8 border-white/20 text-white/60 w-full px-4 md:px-0"
+          className="text-center mt-8 border-t py-8 border-white/20  w-full px-4 md:px-0"
           initial="hidden"
           animate={controls}
           variants={itemVariants}

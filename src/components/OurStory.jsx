@@ -21,7 +21,7 @@ const itemVariants2 = {
 
 const OurStory = () => {
     return (
-        <div className="w-full bg-[linear-gradient(to_bottom_left,_#0f0f1a_80%,_#2b1957_105%,_#5a3d91_80%)]
+        <div className="w-full bg-[linear-gradient(to_bottom_left,_#0b121e_80%,_#2f3a4d_100%)]
 relative py-20">
             <div className="flex flex-col md:flex-row gap-5 lg:gap-10 items-center justify-center px-3 lg:w-[90%] 2xl:w-[70%] mx-auto">
 

@@ -16,7 +16,7 @@ const fadeLeft = {
 
 const Hero = () => {
   return (
-    <div className="bg-[linear-gradient(to_top_right,_#0f0f1a_80%,_#2b1957_105%,_#5a3d91_80%)]
+    <div className="bg-[linear-gradient(to_top_right,_#0b121e_70%,_#2f3a4d_100%)]
  text-[#ffffff] flex flex-col py-4 w-full text-sm md:text-[15px]">
       <Navbar />
       <section id="hero" className="w-full relative sm:mb-20">
@@ -34,7 +34,7 @@ const Hero = () => {
                 whileInView="visible"
                 viewport={{ once: true, amount: 0.2 }}
               >
-                Welcome to CLI-X
+                Welcome to PENTECH
               </motion.h2>
 
               <motion.p

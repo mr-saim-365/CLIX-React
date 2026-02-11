@@ -124,7 +124,7 @@ const Services = () => {
   };
 
   return (
-    <section id="services" className="bg-[linear-gradient(to_bottom_right,_#0f0f1a_80%,_#2b1957_105%,_#5a3d91_80%)] py-20">
+    <section id="services" className="bg-[linear-gradient(to_bottom_right,_#0b121e_80%,_#2f3a4d_100%)] py-20">
       <div className="w-full px-6 md:px-0 md:w-[90%] 2xl:w-[70%] mx-auto text-[#ffffff]">
          <div className="flex flex-col gap-3 items-center text-center mb-10 md:mb-20 2xl:w-[70%] mx-auto">
           <h1 className="text-[36px] md:text-[40px]">Our Services</h1>
